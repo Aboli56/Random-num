@@ -6,7 +6,7 @@ let answer = Math.floor(Math.random()*100)+1;
 let no_of_guesses = 0;
 let guesses_are = [];
 function play(){
-    
+      let win = new Audio("winnn.mp3");
     if(user_guess.value < 0 || user_guess.value > 100){
         alert("Please enter a Number between 1 and 100.");
     }
@@ -25,6 +25,11 @@ function play(){
             msg1.textContent = "🎊Yehhh..., you win!!!!🎊";
             msg2.textContent = "The Number was : " +answer;
             msg3.textContent = "You guessed it in  "+no_of_guesses +" guesses.";
+             win.play();
+            user_guess.disabled = true;
+            setTimeout(()=>{
+                alert("Do Refresh to Play again");
+            },3000)
         }
     }
 }
