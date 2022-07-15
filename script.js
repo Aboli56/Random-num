@@ -31,5 +31,6 @@ function play(){
                 alert("Do Refresh to Play again");
             },3000)
         }
+          user_guess.value=" ";
     }
 }
