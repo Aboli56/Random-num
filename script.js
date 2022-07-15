@@ -22,7 +22,7 @@ function play(){
             msg2.textContent = "No. of guesses : " +no_of_guesses;
             msg3.textContent = "Guessed nos. are : "+guesses_are;
         }else if(user_guess.value == answer){
-            msg1.textContent = "🎊Yeeeeehhh, you win!!!!🎊";
+            msg1.textContent = "🎊Yehhh..., you win!!!!🎊";
             msg2.textContent = "The Number was : " +answer;
             msg3.textContent = "You guessed it in  "+no_of_guesses +" guesses.";
         }
